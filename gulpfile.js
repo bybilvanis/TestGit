@@ -2,7 +2,6 @@ var gulp       = require('gulp'),
   sass         = require('gulp-sass'),
   browserSync  = require('browser-sync').create(),
   reload	   = browserSync.reload;
-  // imagemin     = require('gulp-imagemin'),
 
 gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')
@@ -47,4 +46,9 @@ gulp.task('img', function() {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['browser-sync', 'serve', 'sass', 'js', 'watch', 'img']);
+gulp.task('html', function() {
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('default', ['browser-sync', 'serve', 'sass', 'js', 'watch', 'img', 'html']);
