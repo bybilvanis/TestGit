@@ -1,0 +1,21 @@
+{
+  "name": "samenwerken",
+  "homepage": "https://github.com/bybilvanis/samenwerken",
+  "authors": [
+    "Muhammet Eyvaz <mmustafa.eyvaz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.2"
+  }
+}
