@@ -39,6 +39,7 @@ gulp.task('serve', ['browser-sync'], function () {
 gulp.task('watch', function () {
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch('src/js/**/*.js', ['js']);
+  gulp.watch('src/**/*.html', ['html']);
 });
 
 gulp.task('img', function() {
